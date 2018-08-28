@@ -210,6 +210,37 @@ body {
   border: 2px dotted white;
 }
 
+.wtl-middle-panel-left{
+  float: left;
+  width: 33%;
+  height: 145px;
+  border: 2px dotted red;
+}
+.wtl-middle-panel-left-top{
+  float: left;
+  width: 99%;
+  height: 72px;
+  border: 1px dotted red;
+}
+.wtl-middle-panel-left-bot{
+  float: left;
+  width: 99%;
+  height: 72px;
+  border: 1px dotted red;
+}
+.wtl-middle-panel-middle{
+  float: left;
+  width: 33%;
+  height: 145px;
+  border: 2px dotted green;
+}
+.wtl-middle-panel-right{
+  float: left;
+  width: 33%;
+  height: 145px;
+  border: 2px dotted blue;
+}
+
 .wtl-editor-box-middle-archive{
   float: left;
   width: 62%;
