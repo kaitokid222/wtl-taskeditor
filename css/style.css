@@ -1,0 +1,321 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+@font-face {
+  font-family: wtlfont;
+  src: url(Circe-ExtraBold.woff);
+}
+
+html,
+body {
+  font-family: wtlfont;
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+  background-image: url("../img/back.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 900px;
+  }
+}
+/*
+ * WTL stuff
+ */
+
+.wtl-editor-box{
+  background-color: rgba(0, 0, 0, 0.2);
+  height:730px;
+  /*overflow:auto;*/
+}
+
+.wtl-editor-box-left{
+  float: left;
+  width: 19%;
+}
+.wtl-editor-box-left-archive{
+  float: left;
+  width: 19%;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.wtl-editor-box-middle{
+  float: left;
+  width: 50%;
+  height:100%;
+  padding-top: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wtl-middle-panel{
+  margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 80%;
+  border: 2px dotted white;
+}
+
+.wtl-editor-box-middle-archive{
+  float: left;
+  width: 62%;
+  height:100%;
+  padding-top: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wtl-editor-box-right{
+  float: left;
+  width: 30%;
+}
+
+.wtl-editor-box-right-archive{
+  float: left;
+  width: 18%;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+
+.wtl-source-grid {
+  display: grid;
+  grid-template-columns: 44px 44px 44px;
+  grid-template-rows: 44px 44px 44px;
+  background-color: rgba(0, 0, 0, 0.3);
+  grid-column-gap:0px;
+  grid-row-gap: 0px;
+  width:135px;
+  margin: 10px 10px 10px 10px;
+}
+
+div.wtl-source-grid div {
+  padding: 3px 3px 3px 3px;
+  margin: 3px 3px 3px 3px;
+}
+
+
+.wtl-target-grid-outer {
+  width:270px;
+  height:160px;
+  /*overflow:auto;*/
+}
+
+.wtl-target-grid-left{
+  float: left;
+  width: 140px;
+  height:150px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 5px 0px 5px 5px;
+}
+
+.wtl-target-grid-right{
+  float: left;
+  width: 110px;
+  height:150px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 5px 5px 5px 0px;
+}
+
+.wtl-target-grid-right .prec{
+  float: left;
+  margin: 5px 5px 5px 5px;
+  height:140px;
+  width: 45px;
+}
+
+.prec-bar{
+  height:100px;
+}
+.prec-icon{
+  padding-top:3px;
+  height:40px;
+}
+
+.wtl-target-grid-right .stacks{
+  float: left;
+  margin: 5px 5px 5px 5px;
+  height:140px;
+  width: 45px;
+}
+
+.stacks-bar{
+  height:100px;
+}
+.stacks-icon{
+  padding-top:3px;
+  height:40px;
+}
+
+.wtl-target-grid {
+  display: grid;
+  grid-template-columns: 44px 44px 44px;
+  grid-template-rows: 44px 44px 44px;
+  grid-column-gap:0px;
+  grid-row-gap: 0px;
+  width:138px;
+  margin: 10px 10px 10px 10px;
+}
+div.wtl-target-grid div {
+  padding: 3px 3px 3px 3px;
+  margin: 3px 3px 3px 3px;
+}
+
+.wtl-editor-input{
+  background: transparent;
+  border: none;
+}
