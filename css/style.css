@@ -207,38 +207,72 @@ body {
   margin-right: auto;
   height: 150px;
   width: 80%;
-  border: 2px dotted white;
+  border: 1px dotted white;
 }
 
 .wtl-middle-panel-left{
   float: left;
   width: 33%;
   height: 145px;
-  border: 2px dotted red;
 }
 .wtl-middle-panel-left-top{
   float: left;
   width: 99%;
   height: 72px;
-  border: 1px dotted red;
+  border-bottom: 1px dotted white;
 }
+.wtl-middle-panel-left-top-icon{
+  float: left;
+  width: 25%;
+  height: 72px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 72px;
+  padding-left: 5px;
+}
+.wtl-middle-panel-left-top-label{
+  float: left;
+  width: 74%;
+  height: 72px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 72px;
+}
+
 .wtl-middle-panel-left-bot{
   float: left;
   width: 99%;
   height: 72px;
-  border: 1px dotted red;
 }
+.wtl-middle-panel-left-bot-icon{
+  float: left;
+  width: 25%;
+  height: 72px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 72px;
+  padding-left: 5px;
+}
+.wtl-middle-panel-left-bot-label{
+  float: left;
+  width: 74%;
+  height: 72px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 72px;
+}
+
 .wtl-middle-panel-middle{
   float: left;
   width: 33%;
   height: 145px;
-  border: 2px dotted green;
+  border: 1px dotted green;
 }
 .wtl-middle-panel-right{
   float: left;
   width: 33%;
   height: 145px;
-  border: 2px dotted blue;
+  border: 1px dotted blue;
 }
 
 .wtl-editor-box-middle-archive{

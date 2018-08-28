@@ -76,6 +76,8 @@ class wtl_html
 	  $o .= "    <meta name=\"author\" content=\"iNk\">";
 	  $o .= "    <title>wtl editor :: " . $t . $_GET["id"] . "</title>";
 	  $o .= "    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\">";
+	  $o .= "    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.2.0/css/regular.css\" integrity=\"sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I\" crossorigin=\"anonymous\">";
+	  $o .= "    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css\" integrity=\"sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6\" crossorigin=\"anonymous\">";
 	  $o .= "    <link href=\"css/style.css\" rel=\"stylesheet\">";
 	  $o .= "    <script src=\"js/wtl.js\"></script>";
 	  $o .= "  </head>";

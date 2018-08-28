@@ -13,8 +13,12 @@ echo "  <div class=\"wtl-editor-box-middle\"><h3>" . $task->description . "</h3>
 echo "    <div class=\"wtl-middle-panel\">";
 echo "      <div class=\"wtl-middle-panel-left\">";
 echo "        <div class=\"wtl-middle-panel-left-top\">";
+echo "          <div class=\"wtl-middle-panel-left-top-icon\"><i class=\"far fa-thumbs-up\"></i></div>";
+echo "          <div class=\"wtl-middle-panel-left-top-label\">upvote</div>";
 echo "        </div>";
 echo "        <div class=\"wtl-middle-panel-left-bot\">";
+echo "          <div class=\"wtl-middle-panel-left-bot-icon\"><i class=\"far fa-thumbs-down\"></i></div>";
+echo "          <div class=\"wtl-middle-panel-left-bot-label\">downvote</div>";
 echo "        </div>";
 echo "      </div>";
 echo "      <div class=\"wtl-middle-panel-middle\">";
