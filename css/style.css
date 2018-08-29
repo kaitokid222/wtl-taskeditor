@@ -209,10 +209,9 @@ body {
   width: 80%;
   border: 1px dotted white;
 }
-
 .wtl-middle-panel-left{
   float: left;
-  width: 33%;
+  width: 50%;
   height: 145px;
 }
 .wtl-middle-panel-left-top{
@@ -237,8 +236,8 @@ body {
   text-align: center;
   vertical-align: middle;
   line-height: 72px;
+  user-select: none;
 }
-
 .wtl-middle-panel-left-bot{
   float: left;
   width: 99%;
@@ -260,20 +259,95 @@ body {
   text-align: center;
   vertical-align: middle;
   line-height: 72px;
-}
-
-.wtl-middle-panel-middle{
-  float: left;
-  width: 33%;
-  height: 145px;
-  border: 1px dotted green;
+  user-select: none;
 }
 .wtl-middle-panel-right{
   float: left;
-  width: 33%;
+  width: 50%;
   height: 145px;
-  border: 1px dotted blue;
+  border-left: 1px dotted white;
 }
+.wtl-middle-panel-right-top{
+  float: left;
+  width: 99%;
+  height: 72px;
+  border-bottom: 1px dotted white;
+}
+.wtl-middle-panel-right-top-icon{
+  float: left;
+  width: 25%;
+  height: 72px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 72px;
+  padding-left: 5px;
+}
+.wtl-middle-panel-right-top-label{
+  float: left;
+  width: 74%;
+  height: 72px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 72px;
+  user-select: none;
+}
+.wtl-middle-panel-right-bot{
+  float: left;
+  width: 99%;
+  height: 72px;
+}
+.wtl-middle-panel-right-bot-icon{
+  float: left;
+  width: 25%;
+  height: 72px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 72px;
+  padding-left: 5px;
+}
+.wtl-middle-panel-right-bot-label{
+  float: left;
+  width: 74%;
+  height: 72px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 72px;
+  user-select: none;
+}
+
+/* anfang jsonkopie */
+.copied::after {
+  position: relative;
+  bottom: 100px;
+  right: 100%;
+  display: block;
+  content: "copied to clipboard";
+  font-size: 1em;
+  padding: 2px 3px;
+  color: #fff;
+  background-color: #22a;
+  border-radius: 3px;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+  opacity: 0;
+  will-change: opacity, transform;
+  animation: showcopied 2s ease;
+}
+@keyframes showcopied {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* ende jsonkopie */
 
 .wtl-editor-box-middle-archive{
   float: left;
@@ -283,6 +357,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* EDITORBOX RECHTS */
 .wtl-editor-box-right{
   float: left;
   width: 30%;
@@ -339,7 +414,7 @@ div.wtl-source-grid div {
 .wtl-target-grid-right .prec{
   float: left;
   margin: 5px 5px 5px 5px;
-  height:140px;
+  height: 140px;
   width: 45px;
 }
 

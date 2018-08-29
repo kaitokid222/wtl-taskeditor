@@ -147,6 +147,21 @@ function getById(id, arr){
   }
 }
 
+function getJSON(target){
+  var c = document.querySelector("#jsondata");
+  var b = document.querySelector("#"+target);
+  var t = document.createElement('INPUT');
+  document.body.appendChild(t);
+  t.setAttribute('value', c.innerHTML)
+  t.select();
+  document.execCommand('copy');
+  document.body.removeChild(t);
+  b.classList.add('copied');
+  setTimeout(function(){
+    b.classList.remove('copied');
+  }, 2000);
+}
+
 window.wtlshapes = wtlshapes;
 window.sourcegrid = [];
 window.targetgrid = [];

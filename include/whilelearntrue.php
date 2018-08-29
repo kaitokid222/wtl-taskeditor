@@ -21,6 +21,10 @@ class db
 		foreach($this->taskfile_arr as $k => $task){
 			$d = json_decode($task);
 			$this->taskfile_arr[$k] = $d;
+			// casting an object to an array add the original json and recast to object.
+			// fixes PHP 5.3+ issue
+			// $this->taskfile_arr[$k]->rawjson = $task; is invalid nowadays
+			$this->taskfile_arr[$k] = (object) array_merge((array)$this->taskfile_arr[$k],array('rawjson' => $task ));
 		}
 	}
 	public function getTask($id = 0){
