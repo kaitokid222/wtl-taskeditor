@@ -96,7 +96,7 @@ class wtl_html
 	  $o .= "                <ul class=\"nav masthead-nav\">";
 	  $o .= "                  <li" . $a[0] . "><a href=\"index.php\">hello</a></li>";
 	  $o .= "                  <li" . $a[1] . "><a href=\"archive.php\">browse tasks</a></li>";
-	  $o .= "                  <li" . $a[2] . "><a href=\"createproblem.php\">create a task</a></li>";
+	  $o .= "                  <li" . $a[2] . "><a href=\"addtask.php\">create a task</a></li>";
 	  $o .= "                </ul>";
 	  $o .= "              </nav>";
 	  $o .= "            </div>";

@@ -12,11 +12,11 @@ $db = new db();
 //var_dump($db->getArchivePageContent());
 //echo "</pre>";
 foreach($db->getArchivePageContent() as $task){
-	echo "<hr><a href=\"problem.php?id=" . $task->tid . "\">" . $task->description . "</a>";
+	echo "<hr><a href=\"task.php?id=" . $task->tid . "\">" . $task->description . "</a>";
 }
 
 echo "</div></div>";
-echo "  <div class=\"wtl-editor-box-right-archive\"><img src=\"img/seriousinfo.png\" border=\"0\" />";
+echo "  <div class=\"wtl-editor-box-right-archive\"><a href=\"https://coregrounds.com/\" target=\"_blank\"><img src=\"img/seriousinfo.png\" border=\"0\" /></a>";
 echo "  </div>";
 echo "</div>";
 echo "";

@@ -16,6 +16,10 @@
  */
 require_once("arrch.php");
 
+
+require_once("steamauth/steamauth.php");
+
+
 /**
  *
  * maincode
